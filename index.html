@@ -25,16 +25,181 @@
 
       </header>
   
-      <section class="section section__about"></section>
+      <section class="section section__about">
+        <div class="about">
+          <div class="about__header">
+            <!-- img class="about__header-profil-image--rounded" -->
+            <div class="about__header-title">
+              <h2 class="about__header-h2">
+                Olivier Hette
+              </h2>
+              <h3 class="about__header-h3">
+                Développeur Web
+              </h3>
+            </div>
+          </div>
+
+          <div class="about__body">
+            <p class="about__body-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Vestibulum porttitor massa sit amet felis ultrices ullamcorper. 
+              Donec et feugiat lacus. 
+              Nunc vitae turpis vel augue scelerisque condimentum a sollicitudin eros. 
+              Donec dolor velit, elementum vitae magna tempor, tempus laoreet massa. 
+              Sed volutpat dapibus aliquet. Fusce dictum nunc vel dapibus vestibulum. 
+              Vivamus cursus, justo faucibus egestas rutrum, justo mi fermentum quam, 
+              eu euismod nulla erat sit amet quam. Aenean sodales dui non ipsum sollicitudin rutrum. 
+              Pellentesque condimentum ligula eget feugiat facilisis. Curabitur dictum, 
+              lorem sed ultrices aliquet, turpis neque accumsan neque. 
+            </p>
+          </div>
   
-      <section class="section section__projects"></section>
+          <a href="#" class="btn btn--green-rounded">
+            <span class="btn--green-rounded-span">En savoir plus...</span>
+          </a>
+        </div>
+      </section>
+  
+      <section class="section section__projects">
+        <h2 class="section__projects-h2">
+          Projets
+        </h2>
 
-      <section class="section section__cv"></section>
+        <div class="cards">
+          <div class="cards__header">
 
-      <section class="section section__contact"></section>
+            <h3 class="cards__header-h3">
+              Groupomania
+            </h3>
 
-      <footer></footer>
-      
+            <span class="cards__header-span">
+              26 mai 2022
+            </span>
+          </div>
+
+          <div class="cards__body">
+
+            <div class="cards__body-image">
+              <!-- image -->
+            </div>
+
+            <div class="cards__body-content">
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                In dignissim ex vitae dictum vestibulum. Suspendisse vel quam vitae enim aliquet gravida.
+                Morbi mattis posuere diam, ultricies dictum enim. 
+                Sed vitae nunc nec tortor facilisis volutpat sit amet sed sapien. 
+                Nulla eget auctor ligula, sit amet finibus 
+              </p>
+
+            </div>
+
+          </div>
+
+          <a href="#" class="btn btn--border-only">
+            <!-- icon -->
+            <span class="btn--green-rounded-span">En savoir plus...</span>
+          </a>
+
+        </div>
+      </section>
+
+      <section class="section section__cv">
+        <h2 class="section__cv-h2">
+          CV
+        </h2>
+
+        <div class="cv">
+          <div class="cv__skills">
+            <h3 class="cv__skills-h3">
+              Compétences
+            </h3>
+
+            <div class="skills">
+
+              <div class="skill">
+                <h5 class="skill-h5">
+                  Javascript
+                </h5>
+                <div class="skill__scale">
+                  <div class="skill__scale-above--js"></div>
+                  <div class="skill_scale-under"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <h5 class="skill-h5">
+                  Php
+                </h5>
+                <div class="skill__scale">
+                  <div class="skill__scale-above--php"></div>
+                  <div class="skill_scale-under"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <h5 class="skill-h5">
+                  Node.js
+                </h5>
+                <div class="skill__scale">
+                  <div class="skill__scale-above--nodejs"></div>
+                  <div class="skill_scale-under"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="cv__experiences">
+            <h3 class="cv__experiences-h3">
+              Expériences
+            </h3>
+
+            <div class="cv__body">
+              <h4 class="cv__body-h4"><a href="#">TrocSalon.fr</a></h4>
+
+              <div class="cv__body-content">
+                <p>Création d’un site vitrine permettant d’afficher l’intégralité des produits du magasin.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="cv__formation">
+            <h3 class="cv__formation-h3">
+              Formations
+            </h3>
+
+            <div class="cv__body">
+              <h4 class="cv__body-h4">OpenClassRoom - Développeur Web</h4>
+
+              <div class="cv__body-content">
+                <p>Création d’un site vitrine permettant d’afficher l’intégralité des produits du magasin.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section section__contact">
+        <h2 class="section__contact-h2">
+          Contact
+        </h2>
+        
+        <form class="contact">
+          <input type="email" name="email" id="email" placeholder="John.Doe@email.fr" required>
+          <input type="text" name="name" id="name" placeholder="John Doe" required>
+          <input type="text" name="object" id="object" placeholder="Objet :">
+          <textarea name="content" id="content" cols="30" rows="10" placeholder="Contenu de votre message">
+          </textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+
+      <footer>
+        <span class="copyright">olivierhette.fr © 2022</span>
+      </footer>
     </div>
 
   </body>
