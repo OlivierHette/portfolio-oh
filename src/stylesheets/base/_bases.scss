@@ -2,4 +2,20 @@ body {
   background: rgb(3,174,175);
   background: linear-gradient(180deg, rgba(3,174,175,1) 0%, rgba(0,50,57,1) 100%);
   background-repeat: no-repeat;
+  width: 100%;
+  overflow-x: hidden;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  background: url("../../../assets/images/bg_cascade.png"), url("../../../assets/images/bg_fondmarin.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:  center top, center bottom;
+}
+section {
+  margin: 20px 20px;
+}
+p {
+  margin: 0 20px;
 }

@@ -1,4 +1,8 @@
-@import "./base/normalize";
+@import "./base/reset";
 
 @import "./base/typo";
 @import "./base/bases";
+
+/* layouts */
+@import "./layouts/header";
+@import "./layouts/footer";
