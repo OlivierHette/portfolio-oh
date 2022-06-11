@@ -1,8 +1,8 @@
 .section {
-  min-width: 300px;
+  min-width: 280px;
   @include displayFlex($direction: column, $align-item: center);
   margin: 40px 0;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .section__hero {
@@ -20,6 +20,7 @@
 
 .section__projects{
   gap: 20px;
+
   &__header {
     @include displayFlex($content: center, $align-item: center);
     width: 100%;
@@ -32,6 +33,21 @@
       @extend %title-edging;
     }
   }
-  // &-h2 {    
-  // }
+
+}
+
+.section__cv {
+  gap: 20px;
+
+  &__header {
+    @include displayFlex($content: center, $align-item: center);
+    width: 100%;
+    gap: 20px;
+    &::before {
+      @extend %title-edging;
+    }
+    &::after {
+      @extend %title-edging;
+    }
+  }
 }

@@ -2,6 +2,7 @@
     @include displayFlex($direction: column, $align-item: center);
     gap: 20px;
     min-width: 240px;
+    max-width: 400px;
 }
 
 .cards__header {

@@ -32,9 +32,9 @@
         <input class="menu-btn" type="checkbox" id="menu-btn" >
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
-          <li><a href="#work">Projets</a></li>
-          <li><a href="#about">CV</a></li>
-          <li><a href="#careers">A propos</a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#CV">CV</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </header>
@@ -84,7 +84,7 @@
   
       <section class="section section__projects">
         <div class="section__projects__header">
-          <h2 class="section__projects-h2">
+          <h2 id="projects" class="section__projects-h2">
             Projets
           </h2>
         </div>
@@ -130,9 +130,11 @@
       </section>
 
       <section class="section section__cv">
-        <h2 class="section__cv-h2">
-          CV
-        </h2>
+        <div class="section__cv__header">
+          <h2 id="CV" class="section__cv-h2">
+            CV
+          </h2>
+        </div>
 
         <div class="cv">
           <div class="cv__skills">
@@ -141,14 +143,13 @@
             </h3>
 
             <div class="skills">
-
+              
               <div class="skill">
                 <h5 class="skill-h5">
                   Javascript
                 </h5>
                 <div class="skill__scale">
-                  <div class="skill__scale-above--js"></div>
-                  <div class="skill_scale-under"></div>
+                  <div class="skill__scale--js"></div>
                 </div>
               </div>
 
@@ -157,8 +158,7 @@
                   Php
                 </h5>
                 <div class="skill__scale">
-                  <div class="skill__scale-above--php"></div>
-                  <div class="skill_scale-under"></div>
+                  <div class="skill__scale--php"></div>
                 </div>
               </div>
 
@@ -167,15 +167,24 @@
                   Node.js
                 </h5>
                 <div class="skill__scale">
-                  <div class="skill__scale-above--nodejs"></div>
-                  <div class="skill_scale-under"></div>
+                  <div class="skill__scale--nodejs"></div>
                 </div>
               </div>
+
+              <div class="skill">
+                <h5 class="skill-h5">
+                  HTML/CSS
+                </h5>
+                <div class="skill__scale">
+                  <div class="skill__scale--htmlcss"></div>
+                </div>
+              </div>
+
             </div>
 
           </div>
 
-          <div class="cv__experiences">
+          <div class="cv cv__experiences">
             <h3 class="cv__experiences-h3">
               Expériences
             </h3>
@@ -190,7 +199,7 @@
 
           </div>
 
-          <div class="cv__formation">
+          <div class="cv cv__formation">
             <h3 class="cv__formation-h3">
               Formations
             </h3>
@@ -208,7 +217,7 @@
       </section>
 
       <section class="section section__contact">
-        <h2 class="section__contact-h2">
+        <h2 id="contact" class="section__contact-h2">
           Contact
         </h2>
         

@@ -12,15 +12,15 @@
     background: #fff;
 }
 
-%multiple-line-text-ellipsis {
-    display: -webkit-box;
-    -webkit-line-clamp: 7;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    max-height: 140px;
-    transition: all 300ms ease-in-out;
-    &:hover {
-        -webkit-line-clamp: 15;
-        max-height: 300px;
-    }
-}
+// %multiple-line-text-ellipsis {
+//     display: -webkit-box;
+//     -webkit-line-clamp: 7;
+//     -webkit-box-orient: vertical;
+//     overflow: hidden;
+//     max-height: 140px;
+//     transition: all 300ms ease-in-out;
+//     &:hover {
+//         -webkit-line-clamp: 15;
+//         max-height: 300px;
+//     }
+// }

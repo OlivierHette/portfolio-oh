@@ -17,3 +17,10 @@
         max-height: 300px;
     }
 }
+
+@mixin scale($width: 100%, $color: #63A714) {
+    height: 100%;
+    width: $width;
+    border-radius: 25px;
+    background-color: $color;
+}
