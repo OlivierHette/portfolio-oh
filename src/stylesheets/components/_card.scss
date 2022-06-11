@@ -1,0 +1,30 @@
+.cards {
+    @include displayFlex($direction: column, $align-item: center);
+    gap: 20px;
+    min-width: 240px;
+}
+
+.cards__header {
+    @include displayFlex($content: space-between, $align-item: baseline);
+    width: 100%;
+    &-h3 {
+        font-size: 1.2rem;
+    }
+    &-span {
+        font-size: 0.8rem;
+    }
+}
+
+.cards__body {
+    &-image {
+        width: 100%;
+    }
+    &-content {
+        margin: 20px 0 0 0;
+        @include multipleLineEllipsis($height: 75px, $line-clamp: 4);
+    }
+}
+
+.cards__footer {
+    align-self: flex-start;
+}

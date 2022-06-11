@@ -1,0 +1,19 @@
+@mixin displayFlex($flex: flex, $direction: row, $content: start, $align-item: start) {
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align-item;
+}
+
+@mixin multipleLineEllipsis ($height: 140px, $line-clamp: 7) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line-clamp;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: $height;
+    transition: all 400ms ease-in-out;
+    &:hover {
+        -webkit-line-clamp: 15;
+        max-height: 300px;
+    }
+}

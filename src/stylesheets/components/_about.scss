@@ -1,10 +1,10 @@
 .about {
-    @extend %flex-column-center;
+    @include displayFlex($direction: column, $align-item: center);
     gap: 20px;
 }
 
 .about__header {
-    @extend %flex-column-center;
+    @include displayFlex($direction: column, $align-item: center);
     &-profil-image {
         &--rounded {
             border: 10px solid $primary-color;
@@ -13,7 +13,7 @@
         }
     }
     &-title {
-        @extend %flex-column-center
+        @include displayFlex($direction: column, $align-item: center);
     }
     &-h3 {
         text-transform: uppercase;
@@ -22,16 +22,7 @@
 
 .about__body{
     &-content {
-        display: -webkit-box;
-        -webkit-line-clamp: 7;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        max-height: 140px;
-        transition: all 300ms ease-in-out;
-        &:hover {
-            -webkit-line-clamp: 15;
-            max-height: 300px;
-        }
+        @include multipleLineEllipsis;
     }
 }
 

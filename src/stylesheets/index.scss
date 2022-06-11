@@ -3,6 +3,7 @@
 /* Utils: mixins, placeholders, variable, etc.. */
 @import "./utils/variables";
 @import "./utils/placeholders";
+@import "./utils/mixins";
 
 /* bases */
 @import "./base/typo";
@@ -17,3 +18,4 @@
 @import "./components/menu";
 @import "./components/about";
 @import "./components/buttons";
+@import "./components/card";
