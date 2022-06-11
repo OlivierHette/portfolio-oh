@@ -1,0 +1,40 @@
+.about {
+    @extend %flex-column-center;
+    gap: 20px;
+}
+
+.about__header {
+    @extend %flex-column-center;
+    &-profil-image {
+        &--rounded {
+            border: 10px solid $primary-color;
+            border-radius: 50%;
+            margin: 20px;
+        }
+    }
+    &-title {
+        @extend %flex-column-center
+    }
+    &-h3 {
+        text-transform: uppercase;
+    }
+}
+
+.about__body{
+    &-content {
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-height: 140px;
+        transition: all 300ms ease-in-out;
+        &:hover {
+            -webkit-line-clamp: 15;
+            max-height: 300px;
+        }
+    }
+}
+
+// .about__footer {
+//     // align-self: flex-start;
+// }

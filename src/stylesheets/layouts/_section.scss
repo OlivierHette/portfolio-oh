@@ -1,17 +1,18 @@
 .section {
-  display: flex;
-  flex-direction: column;
   min-width: 300px;
+  @extend %flex-column-center;
+  margin: 40px 40px;
 }
 
 .section__hero {
-  &-logo {
-    display: flex;
-    justify-content: center;
-  }
+  margin: 0 20px;
+  // &-logo {
+  //   // display: flex;
+  //   // justify-content: center;
+  // }
   &-h1 {
-    color: #fff;
-    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
-    margin: 40px 0 0 0;
+    color: #93357C;
+    text-shadow: $basic-shadow;
+    font-weight: bold;
   }
 }

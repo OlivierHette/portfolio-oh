@@ -1,5 +1,10 @@
 @import "./base/reset";
 
+/* Utils: mixins, placeholders, variable, etc.. */
+@import "./utils/variables";
+@import "./utils/placeholders";
+
+/* bases */
 @import "./base/typo";
 @import "./base/bases";
 
@@ -10,3 +15,5 @@
 
 /* components */
 @import "./components/menu";
+@import "./components/about";
+@import "./components/buttons";
