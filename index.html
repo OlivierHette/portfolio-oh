@@ -217,17 +217,20 @@
       </section>
 
       <section class="section section__contact">
-        <h2 id="contact" class="section__contact-h2">
-          Contact
-        </h2>
+        <div class="section__contact__header">
+          <h2 id="contact" class="section__contact-h2">
+            Contact
+          </h2>
+        </div>
+
         
         <form class="contact">
-          <input type="email" name="email" id="email" placeholder="John.Doe@email.fr" required>
-          <input type="text" name="name" id="name" placeholder="John Doe" required>
-          <input type="text" name="object" id="object" placeholder="Objet :">
-          <textarea name="content" id="content" cols="30" rows="10" placeholder="Contenu de votre message">
+          <input class="contact-items" type="email" name="email" id="email" placeholder="John.Doe@email.fr" required>
+          <input class="contact-items" type="text" name="name" id="name" placeholder="John Doe" required>
+          <input class="contact-items" type="text" name="object" id="object" placeholder="Objet :">
+          <textarea class="contact-items contact-textarea" name="content" id="content" rows="1" placeholder="Contenu de votre message">
           </textarea>
-          <button type="submit">Envoyer</button> 
+          <button class="btn btn--green-radius" type="submit">Envoyer</button> 
         </form>
       </section>
 

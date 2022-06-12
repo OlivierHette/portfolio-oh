@@ -24,3 +24,20 @@
     border-radius: 25px;
     background-color: $color;
 }
+
+@mixin buttonGreenRadius($radius: 25px) {
+    background: $primary-color;
+    border-radius: $radius;
+    border: none;
+    box-shadow: $basic-shadow;
+    transition: all 300ms ease-in-out;
+    color: #fff;
+    &:hover {
+        background: lighten($primary-color, $amount: 2.5);
+        transform: scale(1.1);
+    }
+    &:active {
+        background: darken($primary-color, $amount: 2.5);
+        transform: scale(0.8);
+    }
+}

@@ -51,3 +51,19 @@
     }
   }
 }
+
+.section__contact {
+  gap: 20px;
+
+  &__header {
+    @include displayFlex($content: center, $align-item: center);
+    width: 100%;
+    gap: 20px;
+    &::before {
+      @extend %title-edging;
+    }
+    &::after {
+      @extend %title-edging;
+    }
+  }
+}

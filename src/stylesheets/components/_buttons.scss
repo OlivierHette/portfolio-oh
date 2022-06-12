@@ -5,21 +5,13 @@
     padding: 0 30px;
 
     &--green-rounded {
-        background: $primary-color;
-        border-radius: 25px;
-        box-shadow: $basic-shadow;
-        transition: all 300ms ease-in-out;
-        &:hover {
-            background: lighten($primary-color, $amount: 2.5);
-            transform: scale(1.1);
-        }
-        &:active {
-            background: darken($primary-color, $amount: 2.5);
-            transform: scale(0.8);
-        }
+        @include buttonGreenRadius;
         // &-span {
-
         // }
+    }
+
+    &--green-radius {
+        @include buttonGreenRadius($radius: 5px);
     }
 
     &--border-only {

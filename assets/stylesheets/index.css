@@ -46,7 +46,7 @@ td, th {
 /* Utils: mixins, placeholders, variable, etc.. */
 /* Colors */
 /* Shadows */
-.cv__experiences::after, .cv__skills::after, .section__cv__header::after, .section__cv__header::before, .section__projects__header::after, .section__projects__header::before {
+.cv__experiences::after, .cv__skills::after, .section__contact__header::after, .section__contact__header::before, .section__cv__header::after, .section__cv__header::before, .section__projects__header::after, .section__projects__header::before {
   content: "";
   display: block;
   height: 2px;
@@ -59,7 +59,7 @@ h1, h2 {
   font-family: "Fjalla One", sans-serif;
 }
 
-h3, h4, h5, p, span, a {
+h3, h4, h5, p, span, a, input, textarea {
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -88,7 +88,7 @@ h5 {
   font-size: 1rem;
 }
 
-p {
+p, input, textarea {
   font-size: 1rem;
 }
 
@@ -154,6 +154,17 @@ a {
   gap: 20px;
 }
 .section__cv__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.section__contact {
+  gap: 20px;
+}
+.section__contact__header {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -314,14 +325,32 @@ a {
 .btn--green-rounded {
   background: #69A00B;
   border-radius: 25px;
+  border: none;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
   transition: all 300ms ease-in-out;
+  color: #fff;
 }
 .btn--green-rounded:hover {
   background: #71ac0c;
   transform: scale(1.1);
 }
 .btn--green-rounded:active {
+  background: #61940a;
+  transform: scale(0.8);
+}
+.btn--green-radius {
+  background: #69A00B;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+  transition: all 300ms ease-in-out;
+  color: #fff;
+}
+.btn--green-radius:hover {
+  background: #71ac0c;
+  transform: scale(1.1);
+}
+.btn--green-radius:active {
   background: #61940a;
   transform: scale(0.8);
 }
@@ -469,6 +498,40 @@ a {
   width: 90%;
   border-radius: 25px;
   background-color: #D84924;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  max-width: 600px;
+  gap: 20px;
+}
+.contact-items {
+  width: 100%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  border: solid 1px rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.7);
+  padding-left: 10px;
+  transition: outline-color 400ms ease-in-out;
+}
+.contact-items:focus {
+  outline: 2px solid;
+  outline-color: #69A00B;
+  outline-offset: 2px;
+}
+.contact-textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 1.2rem;
+  padding-top: 10px;
+  resize: none;
+  overflow: hidden;
+  overflow-wrap: break-word;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,7 +1,7 @@
 h1, h2 {
   font-family: 'Fjalla One', sans-serif;
 }
-h3, h4, h5, p, span, a {
+h3, h4, h5, p, span, a, input, textarea {
   font-family: 'Roboto Condensed', sans-serif;
 }
 h1, h2 {
@@ -23,7 +23,7 @@ h4 {
 h5 {
   font-size: 1rem;
 }
-p{
+p, input, textarea{
   font-size: 1rem;
 }
 body {
