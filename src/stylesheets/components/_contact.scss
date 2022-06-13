@@ -4,18 +4,29 @@
     max-width: 600px;
     gap: 20px;
     &-items {
+        @include displayFlex($align-item: center);
         width: 100%;
         height: 40px;
         background: rgba(0, 0, 0, 0.3);
         border: solid 1px rgba(255, 255, 255, 0.3);
         border-radius: 5px;
         color: rgba(255, 255, 255, 0.7);
-        padding-left: 10px;
-        transition: outline-color 400ms ease-in-out;
-        &:focus {
+        gap: 5px;
+        // padding-left: 10px;
+        transition: outline-color 600ms ease-in-out;
+        &:focus-within {
             outline: 2px solid;
             outline-color: #69A00B;
             outline-offset: 2px;
+        }
+    }
+    &-item {
+        border: none;
+        background: none;
+        color: #fff;
+        &:focus {
+            outline: 1px solid transparent;
+            outline-offset: 1px;
         }
     }
     &-textarea {
@@ -26,5 +37,14 @@
         resize: none;
         overflow: hidden;
         overflow-wrap: break-word;
+        padding-left: 10px;
     }
+}
+
+.input-ico {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-left: 10px;
+    color: #fff;
+    text-align: center;
 }

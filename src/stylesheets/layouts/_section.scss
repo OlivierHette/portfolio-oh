@@ -6,15 +6,34 @@
 }
 
 .section__hero {
-  margin: 0 20px;
+  margin: 150px 20px;
+  // margin-top: 70px;
+  height: 30vh;
   // &-logo {
   //   // display: flex;
   //   // justify-content: center;
   // }
   &-h1 {
-    color: #93357C;
+    color: $primary-color;
     text-shadow: $basic-shadow;
     font-weight: bold;
+    @include displayFlex;
+    &::before {
+      content: "<";
+      margin-right: 10px;
+      font-size: 2.4rem;
+      align-self: flex-start;
+      font-family: 'Roboto Condensed', sans-serif;
+      color: #000;
+    }
+    &::after {
+      content: " />";
+      margin-left: 10px;
+      font-size: 2.4rem;
+      align-self: flex-end;
+      font-family: 'Roboto Condensed', sans-serif;
+      color: #000;
+    }
   }
 }
 

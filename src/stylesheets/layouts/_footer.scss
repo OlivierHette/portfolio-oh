@@ -1,3 +1,5 @@
 footer {
-  
+  @include displayFlex($content: center);
+  margin-top: 250px;
+  padding-bottom: 10px;
 }
