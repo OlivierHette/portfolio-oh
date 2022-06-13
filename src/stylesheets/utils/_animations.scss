@@ -1,0 +1,103 @@
+@keyframes balises-logo-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    80% {
+        opacity: 80%;
+        transform: translateX(5px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes balises-logo-right {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    80% {
+        opacity: 80%;
+        transform: translateX(-5px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+.section__hero-h1 {
+    &::before {
+        animation: balises-logo-left 1s ease-in-out 300ms 1 normal both;
+    }
+    &::after {
+        animation: balises-logo-right 1s ease-in-out 300ms 1 normal both;
+    }
+}
+
+@keyframes dropside {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+    // 80% {
+    //     opacity: 0%;
+    // }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes dropdown {
+    0% {
+        opacity: 0;
+        transform: translatey(250px);
+    }
+    // 80% {
+    //     opacity: 0%;
+    // }
+    100% {
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
+
+.about__header-profil-image--rounded {
+    animation: dropdown 1s ease-in-out 300ms 1 normal both;
+    @include media-min("medium-up") {
+        animation: dropside 1s ease-in-out 300ms 1 normal both;
+    }
+}
+
+@keyframes progress-right {
+    0% {
+        transform: translateX(-442px);
+    }
+    80% {
+        // transform: scaleX(250%);
+        transform: translateX(20px);
+    }
+    100% {
+        // transform: scaleX(110%);
+        transform: translateX(0);
+    }
+}
+
+.skill__scale {
+    overflow-x: hidden;
+    &--js, 
+    &--php, 
+    &--nodejs, 
+    &--sql, 
+    &--htmlcss,
+    &--react, 
+    &--sass, 
+    &--tailwind, 
+    &--bootstrap, 
+    &--wordpress {
+        animation: progress-right 1s ease-in-out 300ms 1 normal both;
+    }
+}

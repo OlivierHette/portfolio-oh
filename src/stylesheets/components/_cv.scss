@@ -10,15 +10,15 @@
             @extend %title-edging;
             width: 70%;
             align-self: center;
+            @include media-min("medium-up") {
+                display: none;
+            }
         }
     }
 
-    &__experiences {
-        &::after {
-            @extend %title-edging;
-            width: 70%;
-            align-self: center;
-        }
+    &__experiences, &__formation {
+        @include displayFlex($direction: column);
+        gap: 20px;
     }
 
     &__body {
@@ -26,6 +26,15 @@
         gap: 20px;
         margin-left: 20px;
     }
+    
+    @include media-min("medium-up") {
+        flex-direction: row-reverse;
+    }
+}
+
+.cv__infos {
+    @include displayFlex($direction: column);
+    gap: 40px;
 }
 
 .skills {
@@ -55,7 +64,7 @@
     }
     
     &--php {
-        @include scale($width: 30%, $color: #4F5B93);
+        @include scale($width: 33%, $color: #4F5B93);
     }
 
     &--nodejs {
@@ -63,6 +72,30 @@
     }
 
     &--htmlcss {
-        @include scale($width: 90%, $color: #D84924);
+        @include scale($width: 95%, $color: #D84924);
+    }
+
+    &--sql {
+        @include scale($width: 70%, $color: #E48E00);
+    }
+
+    &--react {
+        @include scale($width: 65%, $color: #60D9F9);
+    }
+
+    &--sass {
+        @include scale($width: 90%, $color: #CD669A);
+    }
+
+    &--tailwind {
+        @include scale($width: 85%, $color: #1C85B4);
+    }
+
+    &--bootstrap {
+        @include scale($width: 37%, $color: #583C7C);
+    }
+
+    &--wordpress {
+        @include scale($width: 87%, $color: #1C85B4);
     }
 }

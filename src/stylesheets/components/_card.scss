@@ -1,11 +1,15 @@
-.cards {
+.card {
     @include displayFlex($direction: column, $align-item: center);
     gap: 20px;
     min-width: 240px;
-    max-width: 400px;
+    max-width: 544px;
+    
+    @include media-min("medium-up") {
+        max-width: 300px;
+    }
 }
 
-.cards__header {
+.card__header {
     @include displayFlex($content: space-between, $align-item: baseline);
     width: 100%;
     &-h3 {
@@ -16,7 +20,7 @@
     }
 }
 
-.cards__body {
+.card__body {
     &-image {
         width: 100%;
     }
@@ -26,6 +30,6 @@
     }
 }
 
-.cards__footer {
+.card__footer {
     align-self: flex-start;
 }

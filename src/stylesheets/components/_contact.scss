@@ -20,16 +20,28 @@
             outline-color: #69A00B;
             outline-offset: 2px;
         }
+
+        &__header {
+            width: 100%;
+            @include displayFlex($direction: column);
+            gap: 20px;
+            @include media-min("medium-up") {
+                @include displayFlex($direction: row);   
+            }
+        }
     }
+
     &-item {
         border: none;
         background: none;
         color: #fff;
+        width: 100%;
         &:focus {
             outline: 1px solid transparent;
             outline-offset: 1px;
         }
     }
+    
     &-textarea {
         width: 100%;
         height: 150px;

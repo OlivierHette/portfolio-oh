@@ -3,6 +3,10 @@
   @include displayFlex($direction: column, $align-item: center);
   margin: 40px 0;
   padding: 0 20px;
+
+  @include media-min("medium-up") {
+    padding: 0 40px;
+  }
 }
 
 .section__hero {
@@ -33,24 +37,65 @@
       color: #000;
     }
   }
+
+  @include media-min("small-down") {
+    margin: 0 20px;
+    min-height: 100px;
+    @include displayFlex($content: center, $align-item: center);
+  }
+
+  @include media-min("medium-up") {
+    min-height: 450px;
+  }
+
+  @include media-min-perso($value: 920px) {
+    min-height: 510px;
+  }
+  // a partir de 900px min-height = +
 }
 
 .section__projects{
-  gap: 20px;
+  gap: 30px;
 
   &__header {
     @include displayFlex($content: center, $align-item: center);
     width: 100%;
     gap: 20px;
-
+    cursor: pointer;
+    
     &::before {
       @extend %title-edging;
     }
     &::after {
       @extend %title-edging;
+      @include media-min("medium-up") {
+        display: none;
+      }
+    }
+    
+    @include media-min("medium-up") {
+      @include displayFlex($content: flex-end, $align-item: center);
+      margin-right: 40px;
     }
   }
+}
+.section__cards {
+  // @include media-min-perso($value: 920px) {
+  //   @include displayFlex($direction: row, $content: center);
+  //   flex-wrap: wrap;
+  //   gap: 40px;
+  //   // width: 100%;
+  //   // max-width: 800px;
+  // }
+  @include displayFlex($direction: column, $content: center);
+  gap: 40px;
 
+  @include media-min("medium-up") {
+    @include displayFlex($direction: row, $content: center);
+    flex-wrap: wrap;
+    max-width: 800px;
+    gap: 40px;
+  }
 }
 
 .section__cv {
@@ -60,12 +105,21 @@
     @include displayFlex($content: center, $align-item: center);
     width: 100%;
     gap: 20px;
+
     &::before {
       @extend %title-edging;
+      @include media-min("medium-up") {
+        display: none;
+      }
     }
     &::after {
       @extend %title-edging;
     }
+
+    @include media-min("medium-up") {
+      @include displayFlex($content: flex-start, $align-item: center);
+    }
+    
   }
 }
 
@@ -81,6 +135,13 @@
     }
     &::after {
       @extend %title-edging;
+      @include media-min("medium-up") {
+        display: none;
+      }
+    }
+
+    @include media-min("medium-up") {
+      @include displayFlex($content: flex-end, $align-item: center);
     }
   }
 }

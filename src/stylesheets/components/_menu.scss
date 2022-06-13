@@ -55,6 +55,12 @@
   position: relative;
   transition: background .2s ease-out;
   width: 18px;
+
+  @include media-min("small-down") {
+    background: #fff;
+    width: 34px;
+    height: 3px;
+  }
 }
 
 .header .menu-icon .navicon:before,
@@ -66,14 +72,23 @@
   position: absolute;
   transition: all .2s ease-out;
   width: 100%;
+  @include media-min("small-down") {
+    background: #fff;
+  }
 }
 
 .header .menu-icon .navicon:before {
   top: 5px;
+  @include media-min("small-down") {
+    top: 11px;
+  }
 }
 
 .header .menu-icon .navicon:after {
   top: -5px;
+  @include media-min("small-down") {
+    top: -11px;
+  }
 }
 
 /* menu btn */

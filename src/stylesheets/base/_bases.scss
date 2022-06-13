@@ -5,11 +5,24 @@ body {
   background-repeat: no-repeat;
 }
 .main {
-  background: url("../../../assets/images/background/bg_small/bg_top_small.png"), 
-              url("../../../assets/images/background/bg_small/bg_bottom_small.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position:  center top, center bottom;
+  $url-top: "../../../assets/images/background/bg_small/bg_top_small.png";
+  $url-bottom: "../../../assets/images/background/bg_small/bg_bottom_small.png";
+
+  @include background-url($url-top, $url-bottom);
+
+  @include media-min("small-down") {
+    $url-top: "../../../assets/images/background/bg_medium/bg_top_medium.png";
+    $url-bottom: "../../../assets/images/background/bg_medium/bg_bottom_medium.png";
+
+    @include background-url($url-top, $url-bottom);
+  }
+
+  @include media-min("medium-up") {
+    $url-top: "../../../assets/images/background/bg_mediumx2/bg_top_mediumx2.png";
+    $url-bottom: "../../../assets/images/background/bg_mediumx2/bg_bottom_mediumx2.png";
+
+    @include background-url($url-top, $url-bottom);
+  }
 }
 // p {
 //   // margin: 0 20px;

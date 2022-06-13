@@ -1,6 +1,14 @@
 .about {
     @include displayFlex($direction: column, $align-item: center);
     gap: 20px;
+
+    @include media-min("small-down") {
+        max-width: 544px;
+    }
+    @include media-min("medium-up") {
+        max-width: 750px;
+        @include displayFlex($flex: wrap)
+    }
 }
 
 .about__header {
@@ -9,7 +17,7 @@
         &--rounded {
             border: 10px solid $primary-color;
             border-radius: 50%;
-            margin: 20px;
+            margin: 0 20px;
         }
     }
     &-title {
@@ -18,14 +26,33 @@
     &-h3 {
         text-transform: uppercase;
     }
-}
-
-.about__body{
-    &-content {
-        @include multipleLineEllipsis;
+    @include media-min("medium-up") {
+        // max-width: 544px;
+        @include displayFlex();
+        &-title {
+            @include displayFlex($direction: column);
+        }
     }
 }
 
-// .about__footer {
-//     // align-self: flex-start;
-// }
+.about__body{
+    @include displayFlex($direction: column, $align-item: center);
+    gap: 20px;
+    &-content {
+        @include multipleLineEllipsis;
+    }
+    @include media-min("medium-up") {
+        @include displayFlex($direction: column);
+
+        &-content {
+            @include multipleLineEllipsis ($height: 60px, $line-clamp: 3)
+        }
+    }
+}
+
+.about__footer {
+    @include media-min("medium-up") {
+        align-self: flex-end;
+        max-width: 180px;
+    }
+}
