@@ -41,3 +41,15 @@
         transform: scale(0.8);
     }
 }
+
+@mixin media-min($key) {
+    @media screen and (min-width: map-get($breakpoints, $key)) {
+     & { @content; }   
+    }
+}
+
+@mixin media-max($key) {
+    @media screen and (max-width: map-get($breakpoints, $key - 1px)) {
+        & { @content; }   
+   }
+}

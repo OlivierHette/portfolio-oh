@@ -46,12 +46,18 @@ td, th {
 /* Utils: mixins, placeholders, variable, etc.. */
 /* Colors */
 /* Shadows */
+/* media query */
 .cv__experiences::after, .cv__skills::after, .section__contact__header::after, .section__contact__header::before, .section__cv__header::after, .section__cv__header::before, .section__projects__header::after, .section__projects__header::before {
   content: "";
   display: block;
-  height: 2px;
+  height: 3px;
+  border-radius: 2px;
   min-width: 17%;
   background: #fff;
+  transition: all 300ms ease-in-out;
+}
+.cv__experiences:hover::after, .cv__skills:hover::after, .section__contact__header:hover::after, .section__contact__header:hover::before, .section__cv__header:hover::after, .section__cv__header:hover::before, .section__projects__header:hover::after, .section__projects__header:hover::before {
+  min-width: 27%;
 }
 
 /* bases */
@@ -68,7 +74,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 3.6rem;
+  font-size: 2.8rem;
 }
 
 h2 {
@@ -141,7 +147,6 @@ footer {
 
 .section__hero {
   margin: 150px 20px;
-  height: 30vh;
 }
 .section__hero-h1 {
   color: #69A00B;
@@ -549,6 +554,7 @@ footer {
   background: rgba(0, 0, 0, 0.3);
   border: solid 1px rgba(255, 255, 255, 0.3);
   border-radius: 5px;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.25);
   color: rgba(255, 255, 255, 0.7);
   gap: 5px;
   transition: outline-color 600ms ease-in-out;
