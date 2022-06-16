@@ -28,7 +28,7 @@ body {
 
   @include media-min("large-up") {
     $url-top: "../../../assets/images/background/bg_large/bg_top_large.webp";
-    $url-bottom: "../../../assets/images/background/bg_large/bg_bottom_large.png";
+    $url-bottom: "../../../assets/images/background/bg_large/bg_bottom_large.webp";
 
     @include background-url($url-top, $url-bottom);
   }

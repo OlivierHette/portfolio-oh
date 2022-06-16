@@ -7,6 +7,10 @@
   @include media-min("medium-up") {
     padding: 0 40px;
   }
+  @include media-min('large-up') {
+  margin: 40px auto;
+  max-width: 1024px;
+  }
 }
 
 .section__hero {
@@ -52,6 +56,27 @@
 
   @include media-min-perso($value: 920px) {
     min-height: 510px;
+  }
+
+  @include media-min("large-up") {
+    max-width: none;
+    min-height: 370px;
+  }
+
+  @include media-min-perso($value: 1180px) {
+    min-height: 410px;
+  }
+
+  @include media-min-perso($value: 1250px) {
+    min-height: 470px;
+  }
+  
+  @include media-min("huge-down") {
+    min-height: 560px;
+  }
+  
+  @include media-min-perso($value: 1900px) {
+  min-height: 700px;
   }
   // a partir de 900px min-height = +
 }
