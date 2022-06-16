@@ -7,7 +7,7 @@
     }
     @include media-min("medium-up") {
         max-width: 750px;
-        @include displayFlex($flex: wrap)
+        @include displayFlex;
     }
 }
 
@@ -18,10 +18,21 @@
             border: 10px solid $primary-color;
             border-radius: 50%;
             margin: 0 20px;
+            outline: solid 5px;
+            outline-color: transparent;
+            outline-offset: 0px;
+            transition: outline-offset 300ms ease-in-out;
+            &:hover {
+                outline: solid 5px $primary-color;
+                outline-offset: 5px;
+            }
         }
     }
     &-title {
         @include displayFlex($direction: column, $align-item: center);
+    }
+    &-h2 {
+        color: #262626;
     }
     &-h3 {
         text-transform: uppercase;
@@ -39,15 +50,40 @@
     @include displayFlex($direction: column, $align-item: center);
     gap: 20px;
     &-content {
-        @include multipleLineEllipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        height: 60px;
+        overflow: hidden;
+        transition: all 400ms ease-in-out;
+        text-overflow: ellipsis;
     }
     @include media-min("medium-up") {
         @include displayFlex($direction: column);
 
         &-content {
-            @include multipleLineEllipsis ($height: 60px, $line-clamp: 3)
+            // @include multipleLineEllipsis ($height: 60px, $line-clamp: 3);
+            // display: -webkit-box;
+            // -webkit-line-clamp: 3;
+            // -webkit-box-orient: vertical;
+            // overflow: hidden;
+            // max-height: 60px;
+            // transition: all 400ms ease-in-out;
+            // &:hover {
+                // -webkit-line-clamp: 15;
+                // max-height: 300px;
+                // overflow: visible;
+            // }
         }
     }
+}
+
+.about__body-content-show {
+    transition: all 400ms ease-in-out;
+    height: 160px;
+    text-overflow: unset;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
 }
 
 .about__footer {

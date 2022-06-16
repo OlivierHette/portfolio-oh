@@ -25,13 +25,13 @@
     background-color: $color;
 }
 
-@mixin buttonGreenRadius($radius: 25px) {
+@mixin buttonGreenRadius($radius: 25px, $color: #fff) {
     background: $primary-color;
     border-radius: $radius;
     border: none;
     box-shadow: $basic-shadow;
     transition: all 300ms ease-in-out;
-    color: #fff;
+    color: $color;
     &:hover {
         background: lighten($primary-color, $amount: 2.5);
         transform: scale(1.1);

@@ -6,9 +6,10 @@ h3, h4, h5, p, span, a, input, textarea {
 }
 h1, h2 {
   text-transform: uppercase;
+  color: #fff;
 }
 h1 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   @include media-min("small-down") {
     font-size: 3.6rem;
   }
@@ -31,7 +32,4 @@ h5 {
 }
 p, input, textarea{
   font-size: 1rem;
-}
-body {
-  color: #f0f0f0;
 }

@@ -14,6 +14,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/stylesheets/index.css">
 
+    <!-- script js -->
+    <script src="./assets/js/index.js" defer></script>
+
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <title>Portfolio - OH</title>
   </head>
@@ -22,9 +25,9 @@
     <main class="main">
 
       <header class="header">
-        <a href="" class="logo">
+        <!-- <a href="" class="logo">
           <img class="header-logo" src="./assets/images/logo_ho.png" alt="logo Portfolio">
-        </a>
+        </a> -->
         <input class="menu-btn" type="checkbox" id="menu-btn" >
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
@@ -42,9 +45,9 @@
       </section>
   
       <section class="section section__about">
-        <div class="about">
+        <div class="about" id="about">
 
-          <img class="about__header-profil-image--rounded" src="./assets/images/pdp.jpg" alt="olivier hette" width="200" height="200">
+          <img class="about__header-profil-image--rounded" src="./assets/images/pdp.webp" alt="olivier hette" width="200" height="200">
           <div class="about__body">
             <div class="about__header">
               <div class="about__header-title">
@@ -69,7 +72,7 @@
               lorem sed ultrices aliquet, turpis neque accumsan neque.
             </p>
             <div class="about__footer">
-              <a href="#" class="btn btn--green-rounded">
+              <a href="#" class="btn btn--green-rounded" id="btn--about">
                 <span class="btn--green-rounded-span">En savoir plus...</span>
               </a>
             </div>
@@ -100,7 +103,7 @@
   
             <div class="card__body">
   
-              <img class="card__body-image" src="./assets/images/projects_groupomania.jpg" alt="groupomania">
+              <img class="card__body-image" src="./assets/images/projects_groupomania.webp" width="250px" height="200px" alt="groupomania">
               <!-- <div class="cards__body-image">
               </div> -->
   
@@ -138,7 +141,7 @@
   
             <div class="card__body">
   
-              <img class="card__body-image" src="./assets/images/projects_groupomania.jpg" alt="groupomania">
+              <img class="card__body-image" src="./assets/images/projects_groupomania.webp" width="250px" height="200px" alt="groupomania">
               <!-- <div class="cards__body-image">
               </div> -->
   
@@ -176,7 +179,7 @@
   
             <div class="card__body">
   
-              <img class="card__body-image" src="./assets/images/projects_groupomania.jpg" alt="groupomania">
+              <img class="card__body-image" src="./assets/images/projects_groupomania.webp" width="250px" height="200px" alt="groupomania">
               <!-- <div class="cards__body-image">
               </div> -->
   
@@ -220,90 +223,90 @@
             <div class="skills">
               
               <div class="skill">
-                <h5 class="skill-h5">
+                <h4 class="skill-h4">
                   Javascript
-                </h5>
+                </h4>
                 <div class="skill__scale">
                   <div class="skill__scale--js"></div>
                 </div>
               </div>
 
               <div class="skill">
-                <h5 class="skill-h5">
+                <h4 class="skill-h4">
                   Php
-                </h5>
+                </h4>
                 <div class="skill__scale">
                   <div class="skill__scale--php"></div>
                 </div>
               </div>
 
               <div class="skill">
-                <h5 class="skill-h5">
+                <h4 class="skill-h4">
                   Node.js
-                </h5>
+                </h4>
                 <div class="skill__scale">
                   <div class="skill__scale--nodejs"></div>
                 </div>
               </div>
 
               <div class="skill">
-                <h5 class="skill-h5">
+                <h4 class="skill-h4">
                   SQL
-                </h5>
+                </h4>
                 <div class="skill__scale">
                   <div class="skill__scale--sql"></div>
                 </div>
               </div>
               
               <div class="skill">
-                <h5 class="skill-h5">
+                <h4 class="skill-h4">
                   HTML/CSS
-                </h5>
+                </h4>
                 <div class="skill__scale">
                   <div class="skill__scale--htmlcss"></div>
                 </div>
               </div>
 
               <div class="skill">
-                <h5 class="skill-h5">
+                <h4 class="skill-h4">
                   React
-                </h5>
+                </h4>
                 <div class="skill__scale">
                   <div class="skill__scale--react"></div>
                 </div>
               </div>
 
               <div class="skill">
-                <h5 class="skill-h5">
+                <h4 class="skill-h4">
                   Sass
-                </h5>
+                </h4>
                 <div class="skill__scale">
                   <div class="skill__scale--sass"></div>
                 </div>
               </div>
 
               <div class="skill">
-                <h5 class="skill-h5">
+                <h4 class="skill-h4">
                   TailWindCss
-                </h5>
+                </h4>
                 <div class="skill__scale">
                   <div class="skill__scale--tailwind"></div>
                 </div>
               </div>
 
               <div class="skill">
-                <h5 class="skill-h5">
+                <h4 class="skill-h4">
                   Bootstrap
-                </h5>
+                </h4>
                 <div class="skill__scale">
                   <div class="skill__scale--bootstrap"></div>
                 </div>
               </div>
 
               <div class="skill">
-                <h5 class="skill-h5">
+                <h4 class="skill-h4">
                   WordPress
-                </h5>
+                </h4>
                 <div class="skill__scale">
                   <div class="skill__scale--wordpress"></div>
                 </div>
@@ -361,6 +364,7 @@
         <form class="contact">
           <div class="contact-items__header">
             <div class="contact-items">
+              <label for="email" class="contact-label">email</label>
               <svg xmlns="http://www.w3.org/2000/svg" class="input-ico" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z" clip-rule="evenodd" />
               </svg>
@@ -368,6 +372,7 @@
             </div>
   
             <div class="contact-items">
+              <label for="name" class="contact-label">name</label>
               <svg xmlns="http://www.w3.org/2000/svg" class="input-ico" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
               </svg>
@@ -376,12 +381,13 @@
           </div>
 
           <div class="contact-items">
+            <label for="object" class="contact-label">objet</label>
             <svg xmlns="http://www.w3.org/2000/svg" class="input-ico" viewBox="0 0 20 20" fill="currentColor">
               <path d="M2 6a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 100 4v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2a2 2 0 100-4V6z" />
             </svg>
             <input class="contact-item" type="text" name="object" id="object" placeholder="Objet :">
           </div>
-
+          <label for="content" class="contact-label">Contenu</label>
           <textarea class="contact-items contact-textarea" name="content" id="content" rows="1" placeholder="Contenu de votre message"></textarea>
           <button class="btn btn--green-radius" type="submit">Envoyer</button> 
         </form>

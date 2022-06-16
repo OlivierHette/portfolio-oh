@@ -1,25 +1,34 @@
 body {
   background: rgb(3,174,175);
-  background: linear-gradient(180deg, rgba(3,174,175,1) 0%, rgba(0,50,57,1) 100%);
+  background: linear-gradient(180deg, #4DCDD8 0%, #005F79 100%);
+  // background: linear-gradient(180deg, rgba(3,174,175,1) 0%, rgba(0,50,57,1) 100%);
   // background: linear-gradient(180deg, rgb(71, 222, 203) 0%, rgb(0, 153, 159) 100%);
   background-repeat: no-repeat;
+  color: #262626;
 }
 .main {
-  $url-top: "../../../assets/images/background/bg_small/bg_top_small.png";
-  $url-bottom: "../../../assets/images/background/bg_small/bg_bottom_small.png";
+  $url-top: "../../../assets/images/background/bg_small/bg_top_small.webp";
+  $url-bottom: "../../../assets/images/background/bg_small/bg_bottom_small.webp";
 
   @include background-url($url-top, $url-bottom);
 
   @include media-min("small-down") {
-    $url-top: "../../../assets/images/background/bg_medium/bg_top_medium.png";
-    $url-bottom: "../../../assets/images/background/bg_medium/bg_bottom_medium.png";
+    $url-top: "../../../assets/images/background/bg_medium/bg_top_medium.webp";
+    $url-bottom: "../../../assets/images/background/bg_medium/bg_bottom_medium.webp";
 
     @include background-url($url-top, $url-bottom);
   }
 
   @include media-min("medium-up") {
-    $url-top: "../../../assets/images/background/bg_mediumx2/bg_top_mediumx2.png";
-    $url-bottom: "../../../assets/images/background/bg_mediumx2/bg_bottom_mediumx2.png";
+    $url-top: "../../../assets/images/background/bg_mediumx2/bg_top_mediumx2.webp";
+    $url-bottom: "../../../assets/images/background/bg_mediumx2/bg_bottom_mediumx2.webp";
+
+    @include background-url($url-top, $url-bottom);
+  }
+
+  @include media-min("large-up") {
+    $url-top: "../../../assets/images/background/bg_large/bg_top_large.webp";
+    $url-bottom: "../../../assets/images/background/bg_large/bg_bottom_large.png";
 
     @include background-url($url-top, $url-bottom);
   }
@@ -28,6 +37,6 @@ body {
 //   // margin: 0 20px;
 // }
 a {
-  color: #fff;
+  color: #262626;
   text-decoration: none;
 }
