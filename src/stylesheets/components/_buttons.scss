@@ -5,29 +5,14 @@
     padding: 0 30px;
 
     &--green-rounded {
-        @include buttonGreenRadius($color:#262626);
-        // &-span {
-        // }
+        @include buttonGreenRadius($color: $primary-text-color);
     }
 
     &--green-radius {
-        @include buttonGreenRadius($radius: 5px, $color: #262626);
+        @include buttonGreenRadius($radius: 5px, $color: $primary-text-color);
     }
 
     &--border-only {
-        // border: 2px solid lighten($primary-color, 10);
-        // border-radius: 5px;
-        // transition: all 300ms ease-in-out;
-        // &:hover {
-        //     background: lighten($primary-color, $amount: 2.5);
-        //     margin-left: 13px;
-        //     transform: scale(1.1);
-        // }
-        // &:active {
-        //     background: darken($primary-color, $amount: 2.5);
-        //     margin-left: -13px;
-        //     transform: scale(0.8);
-        // }
-        @include buttonGreenRadius($radius: 5px, $color: #262626)
+        @include buttonGreenRadius($radius: 5px, $color: $primary-text-color)
     }
 }

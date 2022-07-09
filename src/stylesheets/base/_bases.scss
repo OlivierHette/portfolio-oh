@@ -4,7 +4,7 @@ body {
   // background: linear-gradient(180deg, rgba(3,174,175,1) 0%, rgba(0,50,57,1) 100%);
   // background: linear-gradient(180deg, rgb(71, 222, 203) 0%, rgb(0, 153, 159) 100%);
   background-repeat: no-repeat;
-  color: #262626;
+  color: $primary-text-color;
 }
 .main {
   $url-top: "../../../assets/images/background/bg_small/bg_top_small.webp";
@@ -37,6 +37,15 @@ body {
 //   // margin: 0 20px;
 // }
 a {
-  color: #262626;
+  color: $primary-text-color;
   text-decoration: none;
+}
+
+.link {
+  color: #37510B;
+  transition: all 300ms ease-in-out;
+  &:hover {
+    text-decoration: underline;
+    color: lighten($color: #37510B, $amount: 10);
+  }
 }

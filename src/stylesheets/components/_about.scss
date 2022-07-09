@@ -32,7 +32,7 @@
         @include displayFlex($direction: column, $align-item: center);
     }
     &-h2 {
-        color: #262626;
+        color: $primary-text-color;
     }
     &-h3 {
         text-transform: uppercase;
@@ -65,7 +65,8 @@
 
 .about__body-content-show {
     transition: all 400ms ease-in-out;
-    height: 320px;
+    height: 310px;
+    // overflow: visible;
     text-overflow: unset;
     -webkit-line-clamp: unset;
     -webkit-box-orient: unset;

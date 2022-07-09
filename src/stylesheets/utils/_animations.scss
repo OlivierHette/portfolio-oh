@@ -30,10 +30,10 @@
 
 .section__hero-h1 {
     &::before {
-        animation: balises-logo-left 1s ease-in-out 300ms 1 normal both;
+        animation: balises-logo-left 1s $animation-ease-i-o;
     }
     &::after {
-        animation: balises-logo-right 1s ease-in-out 300ms 1 normal both;
+        animation: balises-logo-right 1s $animation-ease-i-o;
     }
 }
 
@@ -42,9 +42,7 @@
         opacity: 0;
         transform: translateX(250px);
     }
-    // 80% {
-    //     opacity: 0%;
-    // }
+
     100% {
         opacity: 1;
         transform: translateX(0px);
@@ -56,9 +54,7 @@
         opacity: 0;
         transform: translatey(250px);
     }
-    // 80% {
-    //     opacity: 0%;
-    // }
+
     100% {
         opacity: 1;
         transform: translatey(0px);
@@ -77,11 +73,9 @@
         transform: translateX(-442px);
     }
     80% {
-        // transform: scaleX(250%);
         transform: translateX(20px);
     }
     100% {
-        // transform: scaleX(110%);
         transform: translateX(0);
     }
 }

@@ -26,7 +26,25 @@
     }
     &-content {
         margin: 20px 0 0 0;
-        @include multipleLineEllipsis($height: 75px, $line-clamp: 4);
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        height: 60px;
+        overflow: hidden;
+        transition: all 400ms ease-in-out;
+        text-overflow: ellipsis;
+        &-show {
+            transition: all 400ms ease-in-out;
+            height: 225px;
+            // overflow: visible;
+            text-overflow: unset;
+            -webkit-line-clamp: unset;
+            -webkit-box-orient: unset;
+
+            @include media-min("medium-up") {
+                height: 210px;
+            }
+        }
     }
 }
 

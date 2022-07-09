@@ -17,7 +17,7 @@
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #69A00B;
+  background-color: $primary-color;
 }
 
 /* menu */
@@ -40,7 +40,7 @@
 }
 
 .header .menu-icon .navicon {
-  background: #000;
+  background: $black;
   display: block;
   height: 2px;
   position: relative;
@@ -48,7 +48,7 @@
   width: 18px;
 
   @include media-min("small-down") {
-    background: #fff;
+    background: $white;
     width: 34px;
     height: 3px;
   }
@@ -56,7 +56,7 @@
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #000;
+  background: $black;
   content: '';
   display: block;
   height: 100%;
@@ -64,7 +64,7 @@
   transition: all .2s ease-out;
   width: 100%;
   @include media-min("small-down") {
-    background: #fff;
+    background: $white;
   }
 }
 
@@ -114,18 +114,18 @@
 @media (min-width: 48em) {
   .header li {
     float: left;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(63, 185, 199, 0.4);
     border-radius: 5px;
-    margin: 10px 20px;
+    margin: 20px 20px 20px 0px;
   }
   .header li a {
     padding: 10px 20px;
     border: none;
-    color: #fff;
+    color: #262626;
     transition: all 300ms ease-in-out;
     &:hover {
+      background: rgba(63, 185, 199, 1);
       border-radius: 5px;
-      color: #000;
     }
   }
   .header .menu {

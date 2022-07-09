@@ -22,7 +22,7 @@
         transition: outline-color 600ms ease-in-out;
         &:focus-within {
             outline: 2px solid;
-            outline-color: #69A00B;
+            outline-color: $primary-color;
             outline-offset: 2px;
         }
 
@@ -40,11 +40,14 @@
     &-item {
         border: none;
         background: none;
-        color: #fff;
+        color: $white;
         width: 100%;
         &:focus {
             outline: 1px solid transparent;
             outline-offset: 1px;
+        }
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.7);
         }
     }
     
@@ -57,6 +60,9 @@
         overflow: hidden;
         overflow-wrap: break-word;
         padding-left: 10px;
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
     }
 }
 
@@ -64,6 +70,6 @@
     height: 1.2rem;
     width: 1.2rem;
     margin-left: 10px;
-    color: #fff;
+    color: $white;
     text-align: center;
 }

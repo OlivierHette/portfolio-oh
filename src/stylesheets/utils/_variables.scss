@@ -1,8 +1,20 @@
 /* Colors */
 $primary-color: #69A00B;
 
+$primary-text-color: #262626;
+
+$white: #fff;
+$black: #000;
+
 /* Shadows */
 $basic-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+
+/* Animation ease-in-out */
+$animation-ease-i-o: ease-in-out 300ms 1 normal both;
+
+/* Flex */
+$gap-20: 20px;
+$gap-40: 40px;
 
 /* media query */
 $breakpoints : (
